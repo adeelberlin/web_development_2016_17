@@ -1,0 +1,16 @@
+/* put your css code here */
+body {
+	background-color: #fdfdfd;
+}
+.category-thumbnail img {
+	height: 191px;
+}
+.page-header {
+	margin-left: 10px;
+}
+.page-header h1 {
+	font-weight: bold;
+}
+.animal-show {
+	float: none;
+}
