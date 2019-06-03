@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Count Down</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+
+<button id="btn">Start Count Down</button>
+<p></p>
+
+	<script type="text/javascript">
+
+		$("#btn").click(function() {
+		clearInterval(counter);
+		$("#btn").html("Clear Counter")
+		var i = 10;
+
+		var counter = setInterval( count, 500 );
+
+		function count() {
+			    if (i >= 1) {
+			        console.log(i);
+			        i--;
+			        $("p").html(i);
+			    }
+			    else {
+			        console.log('The End!');
+			         $("p").html('The End!');
+			        clearInterval(counter);
+			    }
+			}
+		});
+
+	</script>
+</body>
+</html>
